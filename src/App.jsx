@@ -3,9 +3,8 @@ import TodoInput from "./components/TodoInput"
 import TodoList from "./components/TodoList"
 
 function App() {
-  
   const [todos, setTodos] = useState([])
-  const [todoValue, setTodoValue] = useState([])
+  const [todoValue, setTodoValue] = useState('')
 
   function handleAddTodos(newTodo) {
     const newTodoList = [...todos, newTodo]
